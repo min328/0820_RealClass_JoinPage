@@ -1,0 +1,23 @@
+/* header#header {
+  border: 1px solid #000;
+}
+
+li.mainLi {
+  border: 1px solid #f00;
+} */
+
+main#main {
+  /* border: 1px solid #000; */
+}
+
+div#signUpArea {
+  /* border: 1px solid #00f; */
+}
+
+div#mainImgArea {
+  /* border: 1px solid #ff0; */
+}
+
+div.inputArea {
+  /* border: 1px solid #000; */
+}

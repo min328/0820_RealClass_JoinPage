@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV0820 리얼클래스 회원가입화면</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <div id="headerFrame">
+        <header id="header" class="flexbox">
+            <nav id="headerGnb">
+                <ul id="mainMenu" class="flexbox">
+                    <li class="mainLi logo"><a href="#"><img src="images/logo.png" alt="헤더로고"><img src="images/logo_Txt.png" alt="헤더로고텍스트"></a></li>
+                    <li class="mainLi package_class">
+                        <a href="#">패키지 수강 <img src="images/arrow_Icon-1.png" id="arrowMark">
+                            <div class="subMenu flexbox">
+                                <div id="ulArea" class="flexbox">
+                                    <ul>
+                                        <a href="#">2021년 신규패키지
+                                            <li class="subLi"><a href="#">올인원 패키지<div class="bestMark">BEST</div></a></li>
+                                            <li class="subLi"><a href="#">실속 패키지<div class="saleMark">SALE</div></a></li>
+                                        </a>
+                                    </ul>
+                                    <ul>
+                                        <a href="#">장르별패키지
+                                            <li class="subLi"><a href="#">애니패키지</a></li>
+                                            <li class="subLi"><a href="#">미드패키지</a></li>
+                                            <li class="subLi"><a href="#">영드패키지</a></li>
+                                            <li class="subLi"><a href="#">영화패키지</a></li>
+                                            <li class="subLi"><a href="#">팝송패키지</a></li>
+                                        </a>
+                                    </ul>
+                                </div> <!-- div#ulArea -->
+                                <div id="eventArea">
+                                    <div class="discountMark">-40%</div>
+                                    <img src="images/gnb-pc-banner@2x.png" alt="">
+                                    <p>[21세기 영어 40%할인]
+                                        <br>
+                                        리얼클래스가 만든 진짜 키즈 영어
+                                    </p>
+                                    <div id="moreInfo">
+                                        <a href="#">자세히보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a>
+                                    </div> <!-- div#moreInfo -->
+                                </div>
+                            </div> <!-- div.subMenu -->
+                        </a>
+                    </li> <!-- 패키지 수강 li -->
+                    <li class="mainLi"><a href="#">전체 클래스</a></li>
+                    <li class="mainLi"><a href="#">학습법</a></li>
+                    <li class="mainLi"><a href="#">리얼후기</a></li>
+                </ul> 
+            </nav> <!-- nav#headerGnb -->
+            <nav id="headerLnb">
+                <button type="button"><img src="images/customer_Icon.png" alt="고객지원">고객지원</button>
+                <button type="button"><img src="images/login_Icon.png" alt="로그인">로그인</button>
+                <button type="button">가입하기</button>
+            </nav> <!-- nav#headerLnb -->
+        </header> 
+        <div id="gnbBG"></div> <!-- div#gnbBG -->
+    </div> <!-- div#headerFrame -->
+    <div id="wrap">
+        <main id="main" class="flexbox">
+            <div id="signUpArea">
+                <p class="title">회원가입</p>
+                <p class="subtitle">SNS계정으로간편하게 회원가입</p>
+                <div id="snsLink" class="flexbox">
+                    <div class="linkBox"><a href="#"><img src="images/naver-Icon.png" alt="네이버로회원가입"></a></div>
+                    <div class="linkBox"><a href="#"><img src="images/cacao-Icon.png" alt="카카오로회원가입"></a></div>
+                    <div class="linkBox"><a href="#"><img src="images/apple-Icon.png" alt="애플계정으로회원가입"></a></div>
+                </div> <!-- div#snsLink -->
+                <div class="inputArea mail must_required_info">
+                    <div class="placeholderText">이메일</div>
+                    <input id="userEmail" type="text" autofocus>
+                </div>
+                <div class="inputArea pass must_required_info">
+                    <div class="placeholderText">비밀번호</div>
+                    <input type="password">
+                </div>
+                <div class="inputArea certi must_required_info">
+                    <div class="placeholderText">휴대전화 번호(숫자만)</div>
+                    <input type="text">
+                    <button type="button">인증번호 요청</button>
+                </div>
+                <div class="inputArea certi_num">
+                    <input type="text" placeholder="인증번호" readonly>
+                </div>
+                <div class="check_list all_check">
+                    <input type="checkbox" id="checkAll">
+                    <label for="checkAll">약관에 모두 동의</label>
+                </div>
+                <div class="check_list">
+                    <input type="checkbox" id="check1" class="checklist">
+                    <label for="check1">[필수] 이용약관 동의</label><img src="images/license-Icon.png" class="licenseMark">
+                </div>
+                <div class="check_list">
+                    <input type="checkbox" id="check3" class="checklist">
+                    <label for="check3">[필수] 개인정보 수집 및 이용 동의</label><img src="images/license-Icon.png" class="licenseMark">
+                </div>
+                <div class="check_list">
+                    <input type="checkbox" id="check2" class="checklist">
+                    <label for="check2">[필수] 제3자 정보 제공 동의</label><img src="images/license-Icon.png" class="licenseMark">
+                </div>
+                <div class="check_list marketing">
+                    <input type="checkbox" id="check4" class="checklist">
+                    <label for="check4">[선택] 마케팅정보 수신 동의</label>
+                    <p>└수신동의하고 <span>추가할인혜택</span>을 받아보세요!</p>
+                </div>
+                <button type="button" id="signUpBtn">회원 가입하기</button>
+                <p class="isMmeber">이미 계정이 있으신가요? <span><a href="#">로그인</a></span></p>
+            </div> <!-- div#signUpArea -->
+            <div id="mainImgArea">
+                <img src="images/character.jpg" alt="홍보모델사진">
+            </div> <!-- div#mainImgArea -->
+        </main>
+    </div> <!-- div#wrwap -->
+</body>
+</html>
